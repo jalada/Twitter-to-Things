@@ -11,7 +11,8 @@
 
 # Bugs
 
-Probably millions.
+ - Don't use speech marks (") in your tweets.
+ - Probably millions.
 
 # Crontab mail
 
