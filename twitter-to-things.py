@@ -1,17 +1,16 @@
 #!/usr/bin/python
 import twitter
-import os
+import os, sys
 
 # The Twitter username & password of your gateway account
 t_user = 'username'
 t_pass = 'password'
 
-osacommand = 'osascript twitter-things.scpt '
+osacommand = 'osascript ' + sys.path[0] + '/twitter-things.scpt '
 
-api = twitter.Api()
 api = twitter.Api(username=t_user, password=t_pass)
 
-filename = os.getcwd() + '/since'
+filename = sys.path[0] + '/since'
 
 try:
 	if not os.path.exists(filename):
